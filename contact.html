@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - PG Accommodation</title>
+  <link rel="stylesheet" href="CSS/contact.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+</head>
+<body>
+  <!-- Header -->
+  <header class="header active">
+    <div class="container">
+      <h1><a href="index.html">Happy Stay</a></h1>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="index.html">Home</a></li>
+          <li><a class="navbar-link" href="myroom.html">Rooms</a></li>
+          <li><a href="#" class="navbar-link active1">Contact Us</a></li>
+          <li><a class="navbar-link" href="payment.html">Payment</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main>
+    <section id="contact-form">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+
+    <section id="contact-info">
+      <h2>Contact Info</h2>
+
+      <div class="container">
+        <div class="info-box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Address</h3>
+          <p>Street No. 24, Action Area 1A, Newtown, Kolkata, West Bengal, India</p>
+        </div>
+        <div class="info-box">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p>+91 99009 00110 <br> +91 98877 02209</p>
+        </div>
+        <div class="info-box">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>HappyStay@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 PG Accommodation. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="JS/contact.js"></script>
+
+    <!-- JavaScript for navbar hamburger & close icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

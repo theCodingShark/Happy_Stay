@@ -1,0 +1,330 @@
+/* Global Styles */
+html {
+  overflow-x: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+   /* Header Styles */
+  header {
+    background-color: #333;;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 15px 0;
+  }
+  header .container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+  }
+  
+  h1 {
+    margin: 0;
+    /* padding: 10px 0; */
+    font-size: 32px;
+    font-family: 'Berkshire Swash', cursive;
+  }
+  h1 a{text-decoration: none; color:#fff;
+
+    }
+  
+  nav ul {
+    list-style: none;
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin-left: 30px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    color: #f1c40f;
+  }
+  
+
+  .navbar-list{
+    display: flex;
+  }
+  
+  /* for hamburger and close icon */
+  .mobile-navbar-btn {
+    /* display: none; */
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .mobile-nav-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+  }
+  
+  .mobile-nav-icon[name="close"]{
+    display: none;
+    color: #000;
+  }
+  
+  /* for hamburger and close icon */
+
+
+
+
+  /* Payment form styles */
+  #payment {
+    margin-top: 150px;
+  }
+  #payment h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    /* #f2f2f2; */
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-right: 15px;
+  }
+  
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3580cf;
+  }
+  
+  /* Booking summary styles */
+  #booking-summary {
+    margin-top: 50px;
+  }
+  
+  #room-details {
+    margin-top: 1rem;
+    background-color: #fff;
+    border: 1px solid #dddddde6;
+    padding: 15px 20px;
+  }
+ 
+
+
+ 
+/* Message Box */
+#message-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:  rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#message-box.hidden {
+  display: none;
+}
+
+#message-box h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: aliceblue;
+  text-align: center;
+}
+
+#message-box p {
+  margin-top: 20px;
+  color: aliceblue;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.2em
+  }
+
+
+
+
+  @media screen and (min-width: 769px) {
+    .mobile-nav-icon[name="menu"]{
+      display: none;
+    }
+    .mobile-navbar-btn {
+      display: none;
+    }
+  }
+    /* Media Query for screens smaller than 768px */
+  @media screen and (max-width: 768px) {
+    .header {
+      position: relative;
+    }
+    
+    .mobile-navbar-btn {
+      display: block;
+      color: black;
+    }
+  
+    .navbar {
+      /* display: none; */
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(225, 244, 251);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      /* to get the transition */
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+  
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar li {
+      padding: 10px 0;
+      padding-right: 60px;
+    }
+    .navbar a {
+      color: #000;
+      font-size: 20px;
+    }
+
+    .active .navbar {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close"] {
+      display: block;
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
+      display: none;
+    }
+  
+  
+    /* Styles for hiding the navbar */
+  .navbar.hide {
+    display: none;
+  }
+  /* Styles for hiding the navbar */
+
+
+  #payment h2{
+    margin-top: -90px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  #cvv {
+    display: block;
+  }
+
+  #payment input {
+    width: 95%;
+  }
+  
+
+
+ 
+  }

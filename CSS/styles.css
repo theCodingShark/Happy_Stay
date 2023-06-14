@@ -1,0 +1,373 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+
+
+    /* for transition in media query */
+    overflow-x: hidden;   
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+  }
+  
+ /* Header */
+  header {
+    background-color: #F5F3E9;
+    color: #333;
+    padding: 20px 0;
+  }
+  header .container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+  }
+  header h1 {
+    font-size: 2em;
+    font-family: 'Berkshire Swash', cursive;
+    margin: 0;
+  }
+    
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color:#333;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    color: #f1c40f;
+  }
+  
+.navbar-list{
+  display: flex;
+}
+
+/* for hamburger and close icon */
+.mobile-navbar-btn {
+  /* display: none; */
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  width: 2rem;
+  height: 2rem;
+  color: black;
+}
+
+.mobile-nav-icon[name="close"]{
+  display: none;
+}
+
+/* for hamburger and close icon */
+
+
+  /* Hero Image */
+  #hero {
+    background-image: url("../img/bgpic.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 200px 0;
+  }
+  
+  #hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  button {
+    background-color: #f1c40f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  button a{
+    text-decoration: none;
+    color: black;
+  }
+  button:hover {
+    background-color: #e67e22;
+  }
+  button a:hover{
+    color: #fff;
+  }
+    
+  /* Features */
+  #features {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  #features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+  }
+  
+  .feature {
+    width: 33.33%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .feature i {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f1c40f;
+  }
+  
+  .feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .feature p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+
+  #testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #testimonials { 
+    background-color:#F2F9FF;
+      /* #fff; */
+    padding: 60px 0 40px;
+  } 
+
+  #testimonials .slider {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  #testimonials .testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #testimonials .testimonial.active {
+    opacity: 1;
+  }
+  
+  #testimonials .testimonial p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  #testimonials .testimonial cite {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  #testimonials .navigation {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #testimonials .navigation button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  #testimonials .navigation button.prev {
+    margin-right: 1rem;
+  }
+  
+  #testimonials .navigation button {
+    color: #555;
+  }
+  
+  #testimonials .navigation button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #F5F3E9;
+    /* #333; */
+    color:#333;
+      /* #fff; */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+
+
+
+
+@media screen and (min-width: 769px) {
+  .mobile-nav-icon[name="menu"]{
+    display: none;
+  }
+  .mobile-navbar-btn {
+    display: none;
+  }
+}
+  /* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+  
+  .mobile-navbar-btn {
+    display: block;
+    color: black;
+  }
+
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background-color: #eae6d3;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to get the transition */
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    padding: 10px 0;
+  }
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
+    display: none;
+  }
+
+
+  /* Styles for hiding the navbar */
+.navbar.hide {
+  display: none;
+}
+/* Styles for hiding the navbar */
+
+
+
+
+  /* Make the hero section responsive */
+  #hero h2 {
+    font-size: 36px;
+  }
+
+  #hero p {
+    font-size: 18px;
+  }
+
+  /* Make the features section responsive */
+  #features .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .feature {
+    margin: 0 100px;
+    margin-bottom: 20px;
+    width: fit-content;
+  }
+}
+
+/* Media Query for screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Make the hero section responsive */
+  #hero h2 {
+    font-size: 48px;
+  }
+
+  #hero p {
+    font-size: 24px;
+  }
+}
+

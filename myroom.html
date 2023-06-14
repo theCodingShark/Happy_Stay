@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms - PG Accommodation</title>
+  <link rel="stylesheet" href="CSS/myroomstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header active">
+    <div class="container">
+      <h1><a class="navbar-link" href="index.html">Happy Stay</a></h1>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="index.html">Home</a></li>
+          <li><a href="rooms.html" class="navbar-link active1">Rooms</a></li>
+          <li><a class="navbar-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main>
+    <section id="room-types">
+      <div class="container">
+        <h2>Our Room Types</h2>
+        <div class="grid">
+          <div class="room">
+            <a href="gallery.html"> <img src="img/single-room.jpg" alt="Single Room"></a>
+            <h3>Single Room</h3>
+            <p>Our single rooms come equipped with a comfortable bed, study desk, and a closet. Perfect for those who prefer privacy.</p>
+            <p class="price">₹13000/mo</p>
+            <a href="#" class="book-btn" data-price="₹13000" data-details="Single">Book Now</a>
+          </div>
+          <div class="room">
+            <a href="gallery.html"> <img src="img/double-room.jpg" alt="Double Room"></a>
+            <h3>Double Room</h3>
+            <p>Our double rooms are perfect for friends or couples. They come equipped with two comfortable beds, study desks, and individual closets.</p>
+            <p class="price">₹7500/mo</p>
+            <a href="#" class="book-btn" data-price="₹7500" data-details="Double">Book Now</a>
+          </div>
+          <div class="room">
+            <a href="gallery.html"> <img src="img/shared-room.jpg" alt="Shared Room"></a>
+            <h3>Shared Room</h3>
+            <p>Our shared rooms are perfect for those who are on a budget. They come equipped with four comfortable beds, study desks, and individual closets.</p>
+            <p class="price">₹4000/mo</p>
+            <a href="#" class="book-btn" data-price="₹4000" data-details="Shared">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="message-box" class="hidden">
+      <div class="container">
+        <h2>Confirm Booking</h2>
+        <p id="message"></p>
+        <div class="btn-group">
+          <button id="confirm-btn" class="btn">Confirm</button>
+          <button id="cancel-btn" class="btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 PG Accommodation. All rights reserved</p>
+    </div>
+  </footer>
+  <script src="JS/myroomscr.js"></script>
+  
+
+  <!-- JavaScript for navbar hamburger & close icon -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
+

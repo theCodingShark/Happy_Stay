@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - PG Accommodation</title>
+  <link rel="stylesheet" href="CSS/payment.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1><a href="index.html">Happy Stay</a></h1>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="index.html">Home</a></li>
+          <li><a class="navbar-link" href="myroom.html">Rooms</a></li>
+          <li><a class="navbar-link" href="contact.html">Contact Us</a></li>
+          <li><a class="navbar-link active1" href="#">Payment</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- Page Content -->
+  <main>
+    <section id="payment">
+      <div class="container">
+        <h2>Payment Details</h2>
+        <form class="payment-form">
+          <div class="form-group">
+            <label for="name">Name on Card</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" required>
+          </div>
+          <div class="form-group">
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+          </div>
+          <button type="submit" id="submit-btn" class="book-btn">Pay Now</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="booking-summary">
+      <div class="container">
+        <h2>Your Booking Summary</h2>
+        <div id="room-details"></div>
+      </div>
+    </section>
+
+    
+
+    <div id="message-box" class="hidden">
+      <div class="container">
+        <h2>Confirm Payment</h2>
+        <p id="message"></p>
+        <div class="btn-group">
+          <button id="confirm-btn" class="btn">Confirm</button>
+          <button id="cancel-btn" class="btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 PG Accommodation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="JS/payment.js"></script>
+
+   <!-- JavaScript for navbar hamburger & close icon -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

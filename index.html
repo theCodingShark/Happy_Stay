@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG Accommodation Website</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="header active">
+    <div class="container">
+      <h1>Happy Stay</h1>
+      <nav class="navbar">
+        <!-- <div class="menu-toggle"><i class="fa fa-bars"></i></div> -->
+        <ul class="navbar-list">
+          <li><a class="navbar-link active1" href="#">Home</a></li>
+          <li><a class="navbar-link" href="#features">Features</a></li>
+          <li><a class="navbar-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="navbar-link" href="myroom.html">Rooms</a></li>
+          <li><a class="navbar-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+      </div>
+    </div>
+  </header>
+  <!-- <header>
+    <div class="container">
+      <h1>Happy Stay</h1>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fa fa-home"></i></a></li>
+          <li><a href="#"><i class="fa fa-th-list"></i></a></li>
+          <li><a href="#"><i class="fa fa-comments"></i></a></li>
+          <li><a href="myroom.html"><i class="fa fa-bed"></i></a></li>
+          <li><a href="contact.html"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> -->
+  
+
+
+  <!-- Hero Image -->
+  <section id="hero">
+    <div class="container">
+      <h2>Find Your Perfect Accommodation</h2>
+      <p>Search and book a PG accommodation that fits your needs and budget.</p>
+      <button><a href="myroom.html">Search Rooms</a></button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <div class="grid">
+        <div class="feature">
+          <i class="fa fa-check"></i>
+          <h3>Convenient Locations</h3>
+          <p>Our PG accommodations are located in prime areas with easy access to transportation and amenities.</p>
+        </div>
+        <div class="feature">
+          <i class="fa fa-check"></i>
+          <h3>Fully Furnished Rooms</h3>
+          <p>All our rooms are fully furnished with modern amenities for a comfortable stay.</p>
+        </div>
+        <div class="feature">
+          <i class="fa fa-check"></i>
+          <h3>Affordable Prices</h3>
+          <p>We offer competitive prices for our PG accommodations without compromising on quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="testimonials">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="slider">
+        <div class="testimonial active">
+          <p>
+            "I had a wonderful experience staying at Happy Stay. The facilities were excellent, and the staff was incredibly helpful and friendly. Highly recommended!"</p>
+          <!-- <p>"I had a great experience staying at Happy Stay. The staff was friendly and the room was clean and comfortable."</p> -->
+          <cite>Shivam Raina</cite>
+        </div>
+        <div class="testimonial">
+          <p>"I highly recommend Happy Stay to anyone looking for a quality stay at an affordable price."</p>
+          <cite>Sakshi Singh</cite>
+        </div>
+        <div class="testimonial">
+          <p>"I had a wonderful experience staying at this PG. The rooms were spacious and well-maintained, and the staff was always friendly and accommodating."</p>
+          <cite>Priya Gupta</cite>
+        </div>
+        <div class="testimonial">
+          <p>"This PG was everything I could have asked for and more. The facilities were top-notch and the location was convenient for both work and play."</p>
+          <cite>Rahul Sharma</cite>
+        </div>
+        <div class="navigation">
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 PG Accommodation. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="JS/script.js"></script>
+
+
+  <!-- JavaScript for navbar hamburger & close icon -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

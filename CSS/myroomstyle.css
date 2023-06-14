@@ -1,0 +1,369 @@
+/* General Styles */
+html {
+  overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    /* background-color: #fff; */
+    background-color: #333;;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 15px 0;
+  }
+  header .container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+  }
+  h1 {
+    margin: 0;
+    /* padding: 10px 0; */
+    font-size: 32px;
+    font-family: 'Berkshire Swash', cursive;
+  }
+  h1 a{text-decoration: none; color:#fff;
+     /* black; */
+    }
+  
+  nav ul {
+    list-style: none;
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin-left: 30px;
+  }
+  
+  nav a {
+    color: #fff;
+    /* #333; */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    color: #f1c40f;
+     /* #000; */
+  }
+
+
+
+
+  .navbar-list{
+    display: flex;
+  }
+  
+  /* for hamburger and close icon */
+  .mobile-navbar-btn {
+    /* display: none; */
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .mobile-nav-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+  }
+  
+  .mobile-nav-icon[name="close"]{
+    display: none;
+    color: #000;
+  }
+  
+  /* for hamburger and close icon */
+
+
+
+
+  /* Room Types Styles */
+  
+  #room-types {
+    padding: 100px 0;
+    /* background-color: #f8f8f8; */
+    background-color: #F2F9FF;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  #room-types h2{
+    padding-top: 40px;
+  }
+  .room {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .room:hover {
+    transform: translateY(-10px);
+  }
+  
+  .room img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .room h3 {
+    margin-bottom: 10px;
+  }
+  
+  .room p {
+    margin-bottom: 20px;
+  }
+  .price {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    }
+  .book-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .book-btn:hover {
+    background-color: #444;
+  }
+  
+/* Message Box */
+#message-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:  rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#message-box.hidden {
+  display: none;
+}
+
+#message-box h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: aliceblue;
+}
+
+#message-box p {
+  margin-top: 20px;
+  color: aliceblue;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+  /* Footer Styles */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  footer p{ 
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+
+  /* Media Queries */
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+    nav li {
+      margin-left: 10px;
+    }
+    
+    nav a {
+      font-size: 14px;
+    }
+  }
+
+
+  @media screen and (min-width: 769px) {
+    .mobile-nav-icon[name="menu"]{
+      display: none;
+    }
+    .mobile-navbar-btn {
+      display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+
+
+
+    .header {
+      position: relative;
+    }
+    
+    .mobile-navbar-btn {
+      display: block;
+      color: black;
+    }
+  
+    .navbar {
+      /* display: none; */
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(225, 244, 251);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      /* to get the transition */
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+  
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar li {
+      padding: 10px 0;
+      padding-right: 35px;
+    }
+
+    .navbar a {
+      color: #000;
+      font-size: 20px;
+    }
+    .active .navbar {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close"] {
+      display: block;
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
+      display: none;
+    }
+  
+  
+    /* Styles for hiding the navbar */
+  .navbar.hide {
+    display: none;
+  }
+  /* Styles for hiding the navbar */
+
+
+
+
+
+  #room-types h2{
+    margin-top: -80px;
+  }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+    
+    nav li {
+      margin-left: 10px;
+    }
+    
+    nav a {
+      font-size: 14px;
+    }
+    
+    .room img {
+      max-height: 150px;
+    }
+  }
+  
