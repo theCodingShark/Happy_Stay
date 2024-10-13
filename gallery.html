@@ -63,9 +63,14 @@
       <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 PG Accommodation. All rights reserved.</p>
+      <p>&copy; <span id="year">2023</span> Happy Stay. All rights reserved.</p>
     </div>
   </footer>
 	<script type="text/javascript" src="JS/gallery.js"></script>
+
+	<!-- script for dynamically fetching year for footer   -->
+	  <script>
+	    document.getElementById("year").textContent = new Date().getFullYear();
+	  </script>
 </body>
 </html>
