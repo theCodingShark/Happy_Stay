@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment - PG Accommodation</title>
+  <title>Payment - Happy Stay</title>
   <link rel="stylesheet" href="CSS/payment.css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,13 +83,19 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 PG Accommodation. All rights reserved.</p>
+      <p>&copy; <span id="year">2023</span> Happy Stay. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- JavaScript -->
   <script src="JS/payment.js"></script>
 
+  <!-- script for dynamically fetching year for footer   -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
+  
    <!-- JavaScript for navbar hamburger & close icon -->
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
